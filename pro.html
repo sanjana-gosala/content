@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <body style="background-color:rgb(233, 242, 243);">
+<head>
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="pro.css" media="screen" />
+  <script src="pro.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/19c75da57a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="top-section">
+    <div class="top">
+      <center><h1 style="color: black;font-family: cursive;"><b>Content Management Tool</b></h1><br><br>
+
+      <img style="border:5px double black;" src="https://www.forbes.com/advisor/wp-content/uploads/2022/10/Best_Content_Management_Software_-_article_image.jpg" width="700" height="300" alt="Photo of Milford Sound in New Zealand" /></center>
+    </div>
+  
+    <div class="card">
+      <div class="input-section"><br><br>
+        <b><label for="Title">Content Title:</label></b> <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="input" type="text" id="title" placeholder="Enter title">  <br/>
+        <b><label for="content">Content Description:</label></b>  <br/>
+        <input class="input" id="content" placeholder="Enter content"/>
+      </div>
+  
+      <div class="input-section">
+        <b><label class="label-section" for="image">Image:</label></b>
+        <input type="file" id="image" accept="image/*">
+      </div>
+  
+      <div class="input-section">
+        <b><label class="label-section" for="video">Video:</label></b>
+        <input type="file" id="video" accept="video/*">
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <div class="data-container">
+    <div class="data-section" id="dataSection">
+    </div>
+  </div>
+</body>
+
+</html>
